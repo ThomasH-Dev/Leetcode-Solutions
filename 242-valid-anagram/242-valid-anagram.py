@@ -4,8 +4,8 @@ class Solution:
             return False
         sortedS = ''.join(sorted(s))
         sortedT = ''.join(sorted(t))
-        for i in range(len(s)):
-            if sortedS[i] != sortedT[i]:
-                return False
+        
+        if sortedS != sortedT:
+            return False
         return True
         
