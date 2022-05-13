@@ -1,7 +1,7 @@
 class Solution:
     def groupAnagrams(self, strs):
         d = {}
-        for i, word in enumerate(strs):
-            key = tuple(sorted(word))
-            d[key] = d.get(key, []) + [word]
+        for word in strs:
+            sortedWord = "".join(sorted(word))
+            d[sortedWord] = d.get(sortedWord, []) + [word]
         return d.values()
