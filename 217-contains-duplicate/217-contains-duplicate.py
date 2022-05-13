@@ -4,6 +4,7 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] in seen:
                 return True
-            seen.add(nums[i])
+            else:
+                seen.add(nums[i])
         return False
         
